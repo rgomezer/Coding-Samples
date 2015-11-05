@@ -1,0 +1,26 @@
+Program Assignment: 5 
+Name: Rodolfo Gomez
+PA5 - Intrinsics & SIMD
+
+---------- Vect4D ----------------
+  Vect4D Orig: 1.390038  
+  Vect4D_SIMD: 1.202466
+       Faster: 1.155990
+
+
+---------- Matrix ----------------
+  Matrix Orig: 3.733885
+  Matrix SIMD: 1.170622
+       Faster: 3.189659
+
+
+---------- Vect * Matrix ----------------
+  Vect*Matrix Orig: 2.832375
+  Vect*Matrix_SIMD: 1.491142
+            Faster: 1.899467
+
+
+---------- LERP ----------------
+  LERP Orig: 6.634893
+  LERP SIMD: 1.074817
+     Faster: 6.173047
