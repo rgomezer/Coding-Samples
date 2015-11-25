@@ -1,0 +1,41 @@
+Program Assignment: 3 
+Name: Student Values
+------------Memory System------------
+
+Test5: 
+
+ 1) allocate block                    
+ 2) free block                        
+
+     memSystem mem;                   
+     mem.InitializeSystem();          
+     void *p = mem.Malloc( 0x200 );     
+     mem.dump();                      
+     mem.Free( p );                   
+     mem.dump();                      
+
+------- DUMP -------------
+
+heapStart: 0x006AB110     
+heapEnd:   0x006B7910 
+
+usedHead:  0x006AB150     
+freeHead:  0x006AB360 
+
+Heap Hdr   s: 006AB110  e: 006AB150                            size: 0x40 
+USED HDR   s: 006AB150  e: 006AB160  p: 00000000  n: 00000000  size: 0x10    AF: 0 
+USED       s: 006AB160  e: 006AB360                            size: 0x200 
+FREE HDR   s: 006AB360  e: 006AB370  p: 00000000  n: 00000000  size: 0x10    AF: 0 
+FREE       s: 006AB370  e: 006B7910                            size: 0xc5a0 
+
+------- DUMP -------------
+
+heapStart: 0x006AB110     
+heapEnd:   0x006B7910 
+
+usedHead:  0x00000000     
+freeHead:  0x006AB150 
+
+Heap Hdr   s: 006AB110  e: 006AB150                            size: 0x40 
+FREE HDR   s: 006AB150  e: 006AB160  p: 00000000  n: 00000000  size: 0x10    AF: 0 
+FREE       s: 006AB160  e: 006B7910                            size: 0xc7b0 

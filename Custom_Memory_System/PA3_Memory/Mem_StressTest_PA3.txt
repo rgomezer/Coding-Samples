@@ -1,0 +1,7 @@
+Program Assignment: 3 
+Name: Rodolfo Gomez
+------------Memory System------------
+
+      Mem Lib: stress test: 6986.874512 ms 
+Custom Memory: stress test: 191.493454 ms 
+              times faster: 36.486233 

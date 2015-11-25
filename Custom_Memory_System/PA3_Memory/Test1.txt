@@ -1,0 +1,21 @@
+Program Assignment: 3 
+Name: Rodolfo Gomez
+------------Memory System------------
+
+Test1: 
+
+     memSystem mem;               
+     mem.InitializeSystem();      
+     mem.dump();                  
+
+------- DUMP -------------
+
+heapStart: 0x006AA0F0     
+heapEnd:   0x006B68F0 
+
+usedHead:  0x00000000     
+freeHead:  0x006AA130 
+
+Heap Hdr   s: 006AA0F0  e: 006AA130                            size: 0x40 
+FREE HDR   s: 006AA130  e: 006AA140  p: 00000000  n: 00000000  size: 0x10    AF: 0 
+FREE       s: 006AA140  e: 006B68F0                            size: 0xc7b0 

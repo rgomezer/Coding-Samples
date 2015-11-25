@@ -1,0 +1,23 @@
+Program Assignment: 3 
+Name: Rodolfo Gomez
+------------Memory System------------
+
+Test2: 
+
+1) allocate the biggest block               
+     memSystem mem;                         
+     mem.InitializeSystem();                
+     void *p = mem.Malloc( 0xc7b0 );        
+     mem.dump();                            
+
+------- DUMP -------------
+
+heapStart: 0x006AB110     
+heapEnd:   0x006B7910 
+
+usedHead:  0x006AB150     
+freeHead:  0x00000000 
+
+Heap Hdr   s: 006AB110  e: 006AB150                            size: 0x40 
+USED HDR   s: 006AB150  e: 006AB160  p: 00000000  n: 00000000  size: 0x10    AF: 0 
+USED       s: 006AB160  e: 006B7910                            size: 0xc7b0 
