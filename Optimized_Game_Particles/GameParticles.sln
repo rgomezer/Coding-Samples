@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameParticles", "GameParticles\GameParticles.vcxproj", "{9A018ABF-E12F-4B90-B56C-EEBF17C547CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{33C8724A-FC45-4987-9202-E12913B5E23B}"
+	ProjectSection(SolutionItems) = preProject
+		Performance1.psess = Performance1.psess
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		PARTICLE_CONTEST_USE_ME|Win32 = PARTICLE_CONTEST_USE_ME|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A018ABF-E12F-4B90-B56C-EEBF17C547CC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9A018ABF-E12F-4B90-B56C-EEBF17C547CC}.Debug|Win32.Build.0 = Debug|Win32
+		{9A018ABF-E12F-4B90-B56C-EEBF17C547CC}.PARTICLE_CONTEST_USE_ME|Win32.ActiveCfg = DO_STOP_ME_NOW|Win32
+		{9A018ABF-E12F-4B90-B56C-EEBF17C547CC}.PARTICLE_CONTEST_USE_ME|Win32.Build.0 = DO_STOP_ME_NOW|Win32
+		{9A018ABF-E12F-4B90-B56C-EEBF17C547CC}.Release|Win32.ActiveCfg = Release|Win32
+		{9A018ABF-E12F-4B90-B56C-EEBF17C547CC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
