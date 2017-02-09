@@ -1,0 +1,136 @@
+2)
+create or replace PROCEDURE check_user_login
+(	
+  in_user_id   NUMBER,
+  in_password  VARCHAR2,
+  out_code     OUT NUMBER
+)
+AS
+  v_count NUMBER;
+BEGIN
+  SELECT COUNT(*)
+    INTO v_count
+    FROM dpu_user
+   WHERE user_id = in_user_id;
+  IF v_count = 0 THEN
+    out_code := -10;
+    RETURN;
+  END IF;
+  
+  SELECT COUNT(*)
+    INTO v_count
+    FROM dpu_user
+   WHERE user_id = in_user_id AND UPPER(is_locked_out) = 'Y';
+  IF v_count = 1 THEN
+    out_code := -20;
+    RETURN;
+  END IF;
+  
+  SELECT COUNT(*)
+    INTO v_count
+    FROM dpu_user
+   WHERE user_id = in_user_id AND password = in_password;
+  IF v_count = 1 THEN
+    UPDATE dpu_user
+    SET last_successful_login_time = SYSDATE, 
+        failed_password_attempt_count = 0,
+        last_failed_login_time = NULL
+    WHERE user_id = in_user_id;
+    out_code := 1;
+    RETURN;
+  ELSE
+    UPDATE dpu_user
+    SET failed_password_attempt_count = failed_password_attempt_count + 1, 
+        last_failed_login_time = SYSDATE
+    WHERE user_id = in_user_id;
+    SELECT failed_password_attempt_count
+      INTO v_count
+      FROM dpu_user
+     WHERE user_id = in_user_id;
+    IF v_count != 5 THEN
+      out_code := -30;
+    ELSE
+      UPDATE dpu_user
+      SET is_locked_out = 'Y',
+          last_locked_out_time = SYSDATE
+      WHERE user_id = in_user_id;
+      out_code := -40;
+    END IF;
+    RETURN;
+  END IF;
+END check_user_login;
+
+3)
+create or replace PROCEDURE reset_user_password
+(
+  in_user_id           NUMBER,
+  in_current_password  VARCHAR2,
+  in_new_password      VARCHAR2,
+  out_code             OUT NUMBER 
+)
+AS
+  v_n NUMBER;
+BEGIN
+  SELECT COUNT(*)
+    INTO v_n
+    FROM dpu_user
+   WHERE user_id = in_user_id;
+  IF v_n = 0 THEN
+    out_code := -10;
+    RETURN;
+  END IF;
+  
+  SELECT COUNT(*)
+    INTO v_n
+    FROM dpu_user
+   WHERE user_id = in_user_id AND password = in_current_password;
+  IF v_n = 0 THEN
+    out_code := -20;
+    RETURN;
+  END IF;
+  
+  IF in_current_password = in_new_password THEN
+    out_code := -30;
+    RETURN;
+  END IF;
+  
+  v_n := LENGTH(in_new_password);
+  IF v_n < 10 OR v_n > 20 THEN
+    out_code := -40;
+    RETURN;
+  END IF;
+  
+  SELECT COUNT(*)
+    INTO v_n
+    FROM DUAL
+   WHERE REGEXP_LIKE(in_new_password, '[A-Z]');
+  IF v_n = 0 THEN
+    out_code := -50;
+    RETURN;
+  END IF;
+  
+  SELECT COUNT(*)
+    INTO v_n
+    FROM DUAL
+  WHERE REGEXP_LIKE(in_new_password, '[a-z]');
+  IF v_n = 0 THEN
+    out_code := -60;
+    RETURN;
+  END IF;
+  
+  SELECT COUNT(*)
+    INTO v_n
+    FROM DUAL
+   WHERE REGEXP_LIKE(in_new_password, '[0-9]');
+  IF v_n = 0 THEN
+    out_code := -70;
+    RETURN;
+  END IF;
+  
+  UPDATE dpu_user
+     SET password = in_new_password,
+         last_password_changed_time = SYSDATE
+   WHERE user_id = in_user_id;
+  out_code := 1;
+  RETURN;
+END;
