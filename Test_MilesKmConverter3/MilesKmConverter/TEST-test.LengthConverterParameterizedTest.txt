@@ -1,0 +1,193 @@
+Testsuite: test.LengthConverterParameterizedTest
+Tests run: 76, Failures: 0, Errors: 0, Skipped: 57, Time elapsed: 0.206 sec
+
+Testcase: testExceptionsMileToKM[0] took 0.018 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsMileToKM[0] took 0.026 sec
+Testcase: testExceptionsKMToMile[0] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsKMToMile[0] took 0 sec
+Testcase: testMileToKM[0] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testMileToKM[0] took 0 sec
+Testcase: testKMToMile[0] took 0.002 sec
+Testcase: testExceptionsMileToKM[1] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsMileToKM[1] took 0 sec
+Testcase: testExceptionsKMToMile[1] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsKMToMile[1] took 0 sec
+Testcase: testMileToKM[1] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testMileToKM[1] took 0 sec
+Testcase: testKMToMile[1] took 0 sec
+Testcase: testExceptionsMileToKM[2] took 0.001 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsMileToKM[2] took 0.001 sec
+Testcase: testExceptionsKMToMile[2] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsKMToMile[2] took 0 sec
+Testcase: testMileToKM[2] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testMileToKM[2] took 0 sec
+Testcase: testKMToMile[2] took 0 sec
+Testcase: testExceptionsMileToKM[3] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsMileToKM[3] took 0 sec
+Testcase: testExceptionsKMToMile[3] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsKMToMile[3] took 0.001 sec
+Testcase: testMileToKM[3] took 0.001 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testMileToKM[3] took 0.001 sec
+Testcase: testKMToMile[3] took 0 sec
+Testcase: testExceptionsMileToKM[4] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsMileToKM[4] took 0 sec
+Testcase: testExceptionsKMToMile[4] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsKMToMile[4] took 0 sec
+Testcase: testMileToKM[4] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testMileToKM[4] took 0 sec
+Testcase: testKMToMile[4] took 0 sec
+Testcase: testExceptionsMileToKM[5] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsMileToKM[5] took 0 sec
+Testcase: testExceptionsKMToMile[5] took 0.001 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsKMToMile[5] took 0.001 sec
+Testcase: testMileToKM[5] took 0.001 sec
+Testcase: testKMToMile[5] took 0.001 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testKMToMile[5] took 0.001 sec
+Testcase: testExceptionsMileToKM[6] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsMileToKM[6] took 0 sec
+Testcase: testExceptionsKMToMile[6] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsKMToMile[6] took 0 sec
+Testcase: testMileToKM[6] took 0 sec
+Testcase: testKMToMile[6] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testKMToMile[6] took 0 sec
+Testcase: testExceptionsMileToKM[7] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsMileToKM[7] took 0 sec
+Testcase: testExceptionsKMToMile[7] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsKMToMile[7] took 0.001 sec
+Testcase: testMileToKM[7] took 0.001 sec
+Testcase: testKMToMile[7] took 0.001 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testKMToMile[7] took 0.001 sec
+Testcase: testExceptionsMileToKM[8] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsMileToKM[8] took 0 sec
+Testcase: testExceptionsKMToMile[8] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsKMToMile[8] took 0 sec
+Testcase: testMileToKM[8] took 0 sec
+Testcase: testKMToMile[8] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testKMToMile[8] took 0 sec
+Testcase: testExceptionsMileToKM[9] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsMileToKM[9] took 0 sec
+Testcase: testExceptionsKMToMile[9] took 0.023 sec
+Testcase: testMileToKM[9] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testMileToKM[9] took 0.001 sec
+Testcase: testKMToMile[9] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testKMToMile[9] took 0 sec
+Testcase: testExceptionsMileToKM[10] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsMileToKM[10] took 0 sec
+Testcase: testExceptionsKMToMile[10] took 0 sec
+Testcase: testMileToKM[10] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testMileToKM[10] took 0 sec
+Testcase: testKMToMile[10] took 0.001 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testKMToMile[10] took 0.001 sec
+Testcase: testExceptionsMileToKM[11] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsMileToKM[11] took 0 sec
+Testcase: testExceptionsKMToMile[11] took 0 sec
+Testcase: testMileToKM[11] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testMileToKM[11] took 0 sec
+Testcase: testKMToMile[11] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testKMToMile[11] took 0 sec
+Testcase: testExceptionsMileToKM[12] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsMileToKM[12] took 0.001 sec
+Testcase: testExceptionsKMToMile[12] took 0.001 sec
+Testcase: testMileToKM[12] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testMileToKM[12] took 0 sec
+Testcase: testKMToMile[12] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testKMToMile[12] took 0 sec
+Testcase: testExceptionsMileToKM[13] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsMileToKM[13] took 0 sec
+Testcase: testExceptionsKMToMile[13] took 0 sec
+Testcase: testMileToKM[13] took 0.001 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testMileToKM[13] took 0.001 sec
+Testcase: testKMToMile[13] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testKMToMile[13] took 0 sec
+Testcase: testExceptionsMileToKM[14] took 0 sec
+Testcase: testExceptionsKMToMile[14] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsKMToMile[14] took 0 sec
+Testcase: testMileToKM[14] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testMileToKM[14] took 0 sec
+Testcase: testKMToMile[14] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testKMToMile[14] took 0 sec
+Testcase: testExceptionsMileToKM[15] took 0.002 sec
+Testcase: testExceptionsKMToMile[15] took 0.001 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsKMToMile[15] took 0.001 sec
+Testcase: testMileToKM[15] took 0.001 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testMileToKM[15] took 0.001 sec
+Testcase: testKMToMile[15] took 0.001 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testKMToMile[15] took 0.001 sec
+Testcase: testExceptionsMileToKM[16] took 0 sec
+Testcase: testExceptionsKMToMile[16] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsKMToMile[16] took 0 sec
+Testcase: testMileToKM[16] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testMileToKM[16] took 0 sec
+Testcase: testKMToMile[16] took 0.001 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testKMToMile[16] took 0.001 sec
+Testcase: testExceptionsMileToKM[17] took 0 sec
+Testcase: testExceptionsKMToMile[17] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsKMToMile[17] took 0 sec
+Testcase: testMileToKM[17] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testMileToKM[17] took 0 sec
+Testcase: testKMToMile[17] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testKMToMile[17] took 0 sec
+Testcase: testExceptionsMileToKM[18] took 0 sec
+Testcase: testExceptionsKMToMile[18] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testExceptionsKMToMile[18] took 0 sec
+Testcase: testMileToKM[18] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testMileToKM[18] took 0 sec
+Testcase: testKMToMile[18] took 0 sec
+	SKIPPED: got: <false>, expected: is <true>
+Testcase: testKMToMile[18] took 0.001 sec

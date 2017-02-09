@@ -1,0 +1,19 @@
+Testsuite: test.LengthConverterTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+
+Testcase: testPositiveInfinityKMToMile took 0.001 sec
+Testcase: testMaxDoubleMileToKM took 0 sec
+Testcase: testNegativeValueKMToMile took 0 sec
+Testcase: testNegativeInfinityMileToKM took 0 sec
+Testcase: testPositiveNegativeInfinityKMToMile took 0 sec
+Testcase: testMaxDoubleKMToMile took 0 sec
+Testcase: testMileToKM took 0 sec
+Testcase: testMileToKM1 took 0 sec
+Testcase: testMileToKM2 took 0 sec
+Testcase: testKMToMile took 0 sec
+Testcase: testNotANumberMileToKM took 0 sec
+Testcase: testPositiveInfinityMileToKM took 0.001 sec
+Testcase: testNegativeValueMileToKM took 0 sec
+Testcase: testKMToMile1 took 0 sec
+Testcase: testKMToMile2 took 0 sec
+Testcase: testNotANumberKMToMile took 0 sec

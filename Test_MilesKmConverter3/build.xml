@@ -1,0 +1,50 @@
+<!-- Rodolfo Gomez -->
+<!-- 5/4/16 -->
+<!-- SE433 -->
+<!-- JUnit and Ant -->
+<project name="Ant_And_JUnit_HW6" default="testAll" basedir=".">
+  <description>
+    Ant build file
+  </description>
+  <!-- set global properties for this build -->
+  <property name="src" location="src"/>
+  <property name="bin" location="bin"/>
+  <property name="junit" location="/Users/jia/Java/JUnit/"/>
+
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+    <!-- Create the build directory -->
+    <mkdir dir="${bin}"/>
+  </target>
+  
+  <target name="compile" depends="init"
+          description="compile the source " >
+    <!-- Compile the java code from ${src} into ${bin} -->
+    <javac includeantruntime="false"
+		   srcdir="${src}" 
+		   destdir="${bin}" 
+		   debug="on">
+      <classpath location="${basedir}/junit-4.12.jar"/>
+      <classpath location="${basedir}/hamcrest-core-1.3.jar"/>
+    </javac>
+  </target>
+  
+  <target name="testAll" depends="compile"> 
+    <!-- Run junit tests -->
+    <junit printsummary="yes" fork="yes">
+      <classpath location="${bin}"/>
+      <classpath location="${basedir}/junit-4.12.jar"/>
+      <classpath location="${basedir}/hamcrest-core-1.3.jar"/>
+      <formatter type="plain"/>
+      <test name="test.LengthConverterTest"/>
+	  <test name="test.LengthConverterParameterizedTest"/>
+    </junit>
+  </target>   
+  
+  <target name="clean">
+    <!-- Delete the ${bin} folder -->
+    <delete dir="${bin}"/>
+  </target>
+
+</project>
