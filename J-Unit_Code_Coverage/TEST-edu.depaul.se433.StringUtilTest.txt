@@ -1,0 +1,77 @@
+Testsuite: edu.depaul.se433.StringUtilTest
+Tests run: 20, Failures: 7, Errors: 3, Skipped: 0, Time elapsed: 0.102 sec
+
+Testcase: testPluralizeDatum took 0.012 sec
+	FAILED
+expected:<dat[a]> but was:<dat[ums]>
+junit.framework.AssertionFailedError: expected:<dat[a]> but was:<dat[ums]>
+	at edu.depaul.se433.StringUtilTest.testPluralizeDatum(StringUtilTest.java:60)
+
+Testcase: testPluralizeGoose took 0 sec
+	FAILED
+expected:<g[eese]> but was:<g[ooses]>
+junit.framework.AssertionFailedError: expected:<g[eese]> but was:<g[ooses]>
+	at edu.depaul.se433.StringUtilTest.testPluralizeGoose(StringUtilTest.java:150)
+
+Testcase: testPluralizeMoose took 0 sec
+	FAILED
+expected:<moose[]> but was:<moose[s]>
+junit.framework.AssertionFailedError: expected:<moose[]> but was:<moose[s]>
+	at edu.depaul.se433.StringUtilTest.testPluralizeMoose(StringUtilTest.java:114)
+
+Testcase: testPluralizeMouse took 0 sec
+Testcase: testPluralizePenny took 0 sec
+Testcase: testPluralizeSheep took 0 sec
+Testcase: testPluralizeEmptyString took 0.001 sec
+	Caused an ERROR
+Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.StringIndexOutOfBoundsException>
+java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.StringIndexOutOfBoundsException>
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.charAt(Unknown Source)
+	at edu.depaul.se433.StringUtil.pluralize(StringUtil.java:42)
+	at edu.depaul.se433.StringUtilTest.testPluralizeEmptyString(StringUtilTest.java:175)
+
+Testcase: testPluralizeI took 0 sec
+	Caused an ERROR
+String index out of range: -1
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.charAt(Unknown Source)
+	at edu.depaul.se433.StringUtil.pluralize(StringUtil.java:43)
+	at edu.depaul.se433.StringUtilTest.testPluralizeI(StringUtilTest.java:156)
+
+Testcase: testPluralizeCrisis took 0 sec
+Testcase: testPluralizePerson took 0 sec
+Testcase: testPluralizeInvalidInput took 0.001 sec
+	Caused an ERROR
+Unexpected exception, expected<java.lang.IllegalArgumentException> but was<org.junit.ComparisonFailure>
+java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<org.junit.ComparisonFailure>
+	at edu.depaul.se433.StringUtilTest.testPluralizeInvalidInput(StringUtilTest.java:187)
+
+Testcase: testPluralizeNucleus took 0.001 sec
+	FAILED
+expected:<nucle[i]> but was:<nucle[uses]>
+junit.framework.AssertionFailedError: expected:<nucle[i]> but was:<nucle[uses]>
+	at edu.depaul.se433.StringUtilTest.testPluralizeNucleus(StringUtilTest.java:123)
+
+Testcase: testPluralizeNullString took 0 sec
+	FAILED
+Expected exception: java.lang.IllegalArgumentException
+junit.framework.AssertionFailedError: Expected exception: java.lang.IllegalArgumentException
+
+Testcase: testPluralizeFish took 0 sec
+Testcase: testPluralizeLoaf took 0 sec
+Testcase: testPluralizePhenomenon took 0.001 sec
+	FAILED
+expected:<phenomen[a]> but was:<phenomen[ons]>
+junit.framework.AssertionFailedError: expected:<phenomen[a]> but was:<phenomen[ons]>
+	at edu.depaul.se433.StringUtilTest.testPluralizePhenomenon(StringUtilTest.java:69)
+
+Testcase: testPluralizeBox took 0 sec
+	FAILED
+expected:<boxe[s]> but was:<boxe[n]>
+junit.framework.AssertionFailedError: expected:<boxe[s]> but was:<boxe[n]>
+	at edu.depaul.se433.StringUtilTest.testPluralizeBox(StringUtilTest.java:24)
+
+Testcase: testPluralizeCat took 0 sec
+Testcase: testPluralizeDog took 0 sec
+Testcase: testPluralizeMan took 0 sec

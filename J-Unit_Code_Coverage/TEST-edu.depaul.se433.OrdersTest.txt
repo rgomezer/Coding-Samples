@@ -1,0 +1,62 @@
+Testsuite: edu.depaul.se433.OrdersTest
+Tests run: 20, Failures: 8, Errors: 1, Skipped: 0, Time elapsed: 0.135 sec
+
+Testcase: testCalculateTotalMaxValue took 0.01 sec
+	FAILED
+Expected exception: java.lang.IllegalArgumentException
+junit.framework.AssertionFailedError: Expected exception: java.lang.IllegalArgumentException
+
+Testcase: testCalculateTotalSalesTaxNYNextDay took 0 sec
+Testcase: testCalculateTotalCheckForOverflow took 0 sec
+	FAILED
+Expected exception: java.lang.IllegalArgumentException
+junit.framework.AssertionFailedError: Expected exception: java.lang.IllegalArgumentException
+
+Testcase: testCalculateTotalUSTerritory took 0 sec
+	FAILED
+Expected exception: java.lang.IllegalArgumentException
+junit.framework.AssertionFailedError: Expected exception: java.lang.IllegalArgumentException
+
+Testcase: testCalculateTotalEmptyString took 0.001 sec
+	FAILED
+Expected exception: java.lang.IllegalArgumentException
+junit.framework.AssertionFailedError: Expected exception: java.lang.IllegalArgumentException
+
+Testcase: testCalculateTotalSalesTaxCACNextDay took 0 sec
+Testcase: testCalculateTotalNegativeInfinity took 0 sec
+Testcase: testCalculateTotalNegativeValue took 0 sec
+Testcase: testCalculateTotalNullString took 0.001 sec
+	Caused an ERROR
+Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.NullPointerException>
+java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.NullPointerException>
+Caused by: java.lang.NullPointerException
+	at edu.depaul.se433.Orders.calculateTotal(Orders.java:19)
+	at edu.depaul.se433.OrdersTest.testCalculateTotalNullString(OrdersTest.java:116)
+
+Testcase: testCalculateTotalSalesTaxCAStandard took 0.001 sec
+Testcase: testCalculateTotalAnyStateStandard took 0.001 sec
+Testcase: testCalculateTotalNaN took 0.001 sec
+	FAILED
+Expected exception: java.lang.IllegalArgumentException
+junit.framework.AssertionFailedError: Expected exception: java.lang.IllegalArgumentException
+
+Testcase: testCalculateTotalSalesTaxILStandard took 0 sec
+Testcase: testCalculateTotalMinValue took 0 sec
+	FAILED
+Expected exception: java.lang.IllegalArgumentException
+junit.framework.AssertionFailedError: Expected exception: java.lang.IllegalArgumentException
+
+Testcase: testCalculateTotalCheckForUnderflow took 0.001 sec
+	FAILED
+Expected exception: java.lang.IllegalArgumentException
+junit.framework.AssertionFailedError: Expected exception: java.lang.IllegalArgumentException
+
+Testcase: testCalculateTotalPositiveInfinity took 0 sec
+	FAILED
+Expected exception: java.lang.IllegalArgumentException
+junit.framework.AssertionFailedError: Expected exception: java.lang.IllegalArgumentException
+
+Testcase: testCalculateTotalIsZero took 0 sec
+Testcase: testCalculateTotalAnyStateNextDay took 0 sec
+Testcase: testCalculateTotalSalesTaxILNextDay took 0 sec
+Testcase: testCalculateTotalSalesTaxNYStandard took 0 sec
